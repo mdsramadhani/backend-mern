@@ -13,7 +13,7 @@ const cors = require("cors");
   Cors options: origin, method, dll
 */
 let corsOptions = {
-  origin: ["http://localhost:3000", "http://192.168.1.5:8189"], // hanya bisa diakses dari origin
+  origin: ["http://localhost:3000", "http://192.168.1.5:8189", "http://192.168.1.223:3000"], // hanya bisa diakses dari origin
   methods: "*", // bisa menjalankan seluruh method HTTP
   optionsSuccessStatus: 200, // hanya menerima code 200 (optional)
 };
