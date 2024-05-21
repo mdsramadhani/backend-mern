@@ -10,6 +10,9 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
+// membuat relasi 1 to m dari table Users ke table Likes  
+// relasi 1 to m dari table Users ke table Posts
+// relasi antar table di Sequelize disebut dengan Associate
   Users.associate = (models) => {
     Users.hasMany(models.Likes, {
       onDelete: "cascade",
